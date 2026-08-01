@@ -1,0 +1,18 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.rox.com/development/about-rox/release-notes
+versioning:
+  scheme: dated-weekly-release-train
+  docs: https://docs.rox.com/development/about-rox/release-notes
+  note: >-
+    Rox publishes dated weekly release notes rather than numbered API versions;
+    it does not expose a public versioned REST API at enrichment time.
+deprecation:
+  policy_url: null
+  sunset_header: null
+  note: No public deprecation policy or RFC 8594 Sunset/Deprecation header support found.
+sla:
+  url: null
+  uptime_target: null
+status_page: https://status.rox.com/
+deprecated_operations: []

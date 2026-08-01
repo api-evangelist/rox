@@ -1,0 +1,40 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.rox.com/development/about-rox/release-notes
+scheme: dated-weekly-release-train
+cadence: weekly
+current_version_note: >-
+  Rox ships on a roughly weekly release cadence and publishes dated release
+  notes rather than semantic version numbers. Entries below are the recent
+  window captured at enrichment; the live release-notes page is the source of
+  truth.
+entries:
+- date: '2026-07-15'
+  highlights:
+  - '"Scheduled Sends" for sequences'
+  - '"Validate Insights" feature'
+  - Security Trust Portal launch
+  breaking: false
+- date: '2026-07-08'
+  highlights:
+  - '"Rox Files" for managing agent-generated content'
+  - '"Propagation" for admin configuration rollouts'
+  breaking: false
+- date: '2026-07-01'
+  highlights:
+  - '"Multiple Mailboxes" support'
+  - '"Enterprise SSO Self Serve" configuration'
+  breaking: false
+- date: '2026-06-24'
+  highlights:
+  - '"CEO Mode" for viewing the entire book of business'
+  breaking: false
+- date: '2026-06-17'
+  highlights:
+  - '"Skills" feature for customizing Chat behavior'
+  breaking: false
+- date: '2026-06-10'
+  highlights:
+  - '"Outbound Agent" for prospecting campaigns'
+  - Unlimited search results
+  breaking: false

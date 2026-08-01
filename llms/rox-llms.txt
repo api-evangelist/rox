@@ -1,0 +1,183 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.rox.com/llms.txt
+---
+# ROX Docs
+
+## Rox Docs
+
+- [Founder Note](https://docs.rox.com/development/about-rox/founder-note.md)
+- [Make the Best Better](https://docs.rox.com/development/about-rox/founder-note/make-the-best-better.md): Announcing Rox’s Public Beta and $50M Raise by Sequoia, GV, General Catalyst and 40+ Angels
+- [New Era of Productivity](https://docs.rox.com/development/about-rox/founder-note/new-era-of-productivity.md): Diogo Ribeiro, cofounder & product lead
+- [Agent Swarm™ Layer](https://docs.rox.com/development/about-rox/founder-note/agent-swarm-tm-layer.md)
+- [Revenue Operating System](https://docs.rox.com/development/about-rox/founder-note/revenue-operating-system.md)
+- [Release Notes](https://docs.rox.com/development/about-rox/release-notes.md): 🚢
+- [Agents](https://docs.rox.com/development/engineering/agents.md): How we build agents at Rox
+- [Context](https://docs.rox.com/development/engineering/context.md): How is context captured in Rox
+- [Knowledge Graph Deep Dive](https://docs.rox.com/development/engineering/context/knowledge-graph-deep-dive.md)
+- [Smart Email Rule Engine](https://docs.rox.com/development/engineering/context/smart-email-rule-engine.md)
+- [Docs](https://docs.rox.com/development/engineering/docs.md)
+- [Rox Architecture](https://docs.rox.com/development/engineering/docs/rox-architecture.md): Rox is reimagining the revenue stack for the AI era. This post introduces the Rox Architecture — a system of context that unifies revenue data and an Agent Swarm™ layer that turns context into action.
+- [Secure by Design](https://docs.rox.com/development/engineering/docs/secure-by-design.md)
+- [System of Context](https://docs.rox.com/development/engineering/docs/system-of-context.md)
+- [Warehouse Native Structured Private Data](https://docs.rox.com/development/engineering/docs/system-of-context/warehouse-native-structured-private-data.md): Warehouse Native for Enterprise Business Systems Data
+- [Content Ingestion for Public Data](https://docs.rox.com/development/engineering/docs/system-of-context/content-ingestion-for-public-data.md)
+- [Connector Hub for Unstructured Private Data](https://docs.rox.com/development/engineering/docs/system-of-context/connector-hub-for-unstructured-private-data.md): Details about the Rox Connector Hub for Enterprise App Data which supports Calendar, SFDC, Email and Slack. More connectors coming soon.
+- [Rox Revenue Data Fabric](https://docs.rox.com/development/engineering/docs/system-of-context/rox-revenue-data-fabric.md)
+- [Entity Relationship Mapping](https://docs.rox.com/development/engineering/docs/system-of-context/rox-revenue-data-fabric/entity-relationship-mapping.md)
+- [Entity Graph](https://docs.rox.com/development/engineering/docs/system-of-context/rox-revenue-data-fabric/entity-graph.md)
+- [Rox Data Layer](https://docs.rox.com/development/engineering/docs/system-of-context/rox-data-layer.md)
+- [Company and Contact Management](https://docs.rox.com/development/engineering/docs/system-of-context/company-and-contact-management.md)
+- [Framework for Reliable Task Execution](https://docs.rox.com/development/engineering/docs/system-of-context/framework-for-reliable-task-execution.md)
+- [Revenue Entity Interfaces](https://docs.rox.com/development/engineering/docs/system-of-context/revenue-entity-interfaces.md)
+- [Account Interface](https://docs.rox.com/development/engineering/docs/system-of-context/revenue-entity-interfaces/account-interface.md)
+- [Person Interface](https://docs.rox.com/development/engineering/docs/system-of-context/revenue-entity-interfaces/person-interface.md): A Unified Data Layer for Scaling Contact Management with Reliability and Speed
+- [Contact Resolution and De-Duplication](https://docs.rox.com/development/engineering/docs/system-of-context/revenue-entity-interfaces/person-interface/contact-resolution-and-de-duplication.md): How Rox Keeps Your CRM Clean and Your Sales Outreach Smarter 🚀
+- [Opportunity Interface](https://docs.rox.com/development/engineering/docs/system-of-context/revenue-entity-interfaces/opportunity-interface.md)
+- [Events Interface](https://docs.rox.com/development/engineering/docs/system-of-context/revenue-entity-interfaces/events-interface.md)
+- [Agent Swarm™ Layer](https://docs.rox.com/development/engineering/docs/agent-swarm-tm-layer.md)
+- [Agent Framework](https://docs.rox.com/development/engineering/docs/agent-swarm-tm-layer/agent-framework.md): Building Intelligent Agent Orchestration at Rox
+- [Agent Reliability](https://docs.rox.com/development/engineering/docs/agent-swarm-tm-layer/agent-reliability.md)
+- [AI Safety](https://docs.rox.com/development/engineering/docs/agent-swarm-tm-layer/ai-safety.md)
+- [Evaluation Framework](https://docs.rox.com/development/engineering/docs/agent-swarm-tm-layer/evaluation-framework.md): Evaluating Complex Agent Systems at Scale
+- [Human Agent Interaction](https://docs.rox.com/development/engineering/docs/agent-swarm-tm-layer/human-agent-interaction.md)
+- [Architecture](https://docs.rox.com/development/engineering/docs/agent-swarm-tm-layer/architecture.md)
+- [Agent Evaluation System](https://docs.rox.com/development/engineering/docs/agent-swarm-tm-layer/architecture/agent-evaluation-system.md)
+- [Workflow Specific Agents](https://docs.rox.com/development/engineering/docs/agent-swarm-tm-layer/workflow-specific-agents.md)
+- [Research Agent](https://docs.rox.com/development/engineering/docs/agent-swarm-tm-layer/workflow-specific-agents/research-agent.md)
+- [Teams & Technologies](https://docs.rox.com/development/engineering/docs/agent-swarm-tm-layer/workflow-specific-agents/research-agent/teams-and-technologies.md)
+- [Custom Account Research](https://docs.rox.com/development/engineering/docs/agent-swarm-tm-layer/workflow-specific-agents/research-agent/custom-account-research.md)
+- [Account Overview](https://docs.rox.com/development/engineering/docs/agent-swarm-tm-layer/workflow-specific-agents/research-agent/account-overview.md)
+- [Outreach Agent](https://docs.rox.com/development/engineering/docs/agent-swarm-tm-layer/workflow-specific-agents/outreach-agent.md)
+- [Outreach (Email & Linkedin)](https://docs.rox.com/development/engineering/docs/agent-swarm-tm-layer/workflow-specific-agents/outreach-agent/outreach-email-and-linkedin.md)
+- [Transcription](https://docs.rox.com/development/engineering/docs/agent-swarm-tm-layer/workflow-specific-agents/outreach-agent/transcription.md)
+- [Conversational Meeting Briefings](https://docs.rox.com/development/engineering/docs/agent-swarm-tm-layer/workflow-specific-agents/outreach-agent/conversational-meeting-briefings.md)
+- [Deal Agent](https://docs.rox.com/development/engineering/docs/agent-swarm-tm-layer/workflow-specific-agents/deal-agent.md)
+- [Meet Agent](https://docs.rox.com/development/engineering/docs/agent-swarm-tm-layer/workflow-specific-agents/meet-agent.md)
+- [Discover](https://docs.rox.com/development/engineering/docs/agent-swarm-tm-layer/workflow-specific-agents/discover.md)
+- [Clever Columns](https://docs.rox.com/development/engineering/docs/agent-swarm-tm-layer/workflow-specific-agents/discover/clever-columns.md)
+- [Pipeline Generation](https://docs.rox.com/development/engineering/docs/agent-swarm-tm-layer/workflow-specific-agents/discover/pipeline-generation.md)
+- [Monitor](https://docs.rox.com/development/engineering/docs/agent-swarm-tm-layer/workflow-specific-agents/monitor.md)
+- [Insights](https://docs.rox.com/development/engineering/docs/agent-swarm-tm-layer/workflow-specific-agents/monitor/insights.md)
+- [Autofill agent](https://docs.rox.com/development/engineering/docs/agent-swarm-tm-layer/workflow-specific-agents/autofill-agent.md)
+- [Apps Agent](https://docs.rox.com/development/engineering/docs/agent-swarm-tm-layer/workflow-specific-agents/apps-agent.md)
+- [Rox Enterprise - Integrations](https://docs.rox.com/development/engineering/docs/rox-enterprise-integrations.md)
+- [Microsoft Teams Orgwide Integration](https://docs.rox.com/development/engineering/docs/rox-enterprise-integrations/microsoft-teams-orgwide-integration.md): Enable organization-wide Microsoft Teams connectivity for Rox, allowing IT administrators to authorize Rox to securely access and ingest Teams meeting transcripts and related meeting metadata.
+- [Zoom Cloud Orgwide Integration](https://docs.rox.com/development/engineering/docs/rox-enterprise-integrations/zoom-cloud-orgwide-integration.md): Enable organization-wide Zoom Cloud connectivity for Rox, allowing IT administrators to authorize Rox to securely access and ingest Zoom cloud rec meeting transcripts and related meeting metadata.
+- [CRM Integration](https://docs.rox.com/development/engineering/docs/rox-enterprise-integrations/crm-integration.md): Rox ↔ CRM integration: Mappings, Real-time & Batch write-back, Bulk sync, ID mapping, and Audit logs — always-current truth view
+- [Google Org-wide Email / Calendar Integration](https://docs.rox.com/development/engineering/docs/rox-enterprise-integrations/google-org-wide-email-calendar-integration.md): Enable Google Workspace connectivity for Rox, allowing IT administrators to authorize to securely access calendar and email data on behalf of all users within their Workspace.
+- [Call recorder Integration](https://docs.rox.com/development/engineering/docs/rox-enterprise-integrations/call-recorder-integration.md)
+- [Slack Integration](https://docs.rox.com/development/engineering/docs/rox-enterprise-integrations/slack-integration.md)
+- [Outlook SSO via Auth0](https://docs.rox.com/development/engineering/docs/rox-enterprise-integrations/outlook-sso-via-auth0.md): Enable your organization’s members to sign in to Rox (https://rox.com) using “Continue with Microsoft” via an Auth0 Enterprise connection to Microsoft Entra ID.
+- [Orgwide Integration via Microsoft Graph](https://docs.rox.com/development/engineering/docs/rox-enterprise-integrations/orgwide-integration-via-microsoft-graph.md): Enable organization-wide Microsoft 365 connectivity for Rox, allowing IT administrators to authorize Rox to securely access calendar and email data on behalf of all users within their Microsoft Entra.
+- [Data Warehouse Integration](https://docs.rox.com/development/engineering/docs/rox-enterprise-integrations/data-warehouse-integration.md)
+- [Snowflake](https://docs.rox.com/development/engineering/docs/rox-enterprise-integrations/data-warehouse-integration/snowflake.md)
+- [Databricks](https://docs.rox.com/development/engineering/docs/rox-enterprise-integrations/data-warehouse-integration/databricks.md)
+- [BigQuery](https://docs.rox.com/development/engineering/docs/rox-enterprise-integrations/data-warehouse-integration/bigquery.md)
+- [Granting Microsoft Integration Permissions for Rox](https://docs.rox.com/development/engineering/docs/rox-enterprise-integrations/granting-microsoft-integration-permissions-for-rox.md)
+- [Salesforce Integration](https://docs.rox.com/development/engineering/docs/rox-enterprise-integrations/salesforce-integration.md): Connect Salesforce (SFDC) to Rox to sync your CRM objects, power Rox features,   and optionally write activities and updates back to Salesforce.
+- [Enterprise SSO via Auth0](https://docs.rox.com/development/engineering/docs/rox-enterprise-integrations/enterprise-sso-via-auth0.md): Let your team sign in to Rox with your company's Identity provider
+- [Governance](https://docs.rox.com/development/engineering/governance.md)
+- [How We're Building Unified Governance Engine](https://docs.rox.com/development/engineering/governance/how-were-building-unified-governance-engine.md): How Rox built unified, multi-source governance for users and AI agents using a single abstraction - the Pod with provenance, hierarchy rollups, and real-time sync.
+- [Product Overview](https://docs.rox.com/development/product/product-overview.md)
+- [Plan & Prioritize: Transform Your GTM Strategy](https://docs.rox.com/development/product/product-overview/plan-and-prioritize-transform-your-gtm-strategy.md): Plan your target territories and prioritize your accounts with Rox.
+- [Research: Self-Updating and Actionable Account Data](https://docs.rox.com/development/product/product-overview/research-self-updating-and-actionable-account-data.md)
+- [Discover: Continuous Discovery, in Auto-Pilot](https://docs.rox.com/development/product/product-overview/discover-continuous-discovery-in-auto-pilot.md)
+- [Engage: Deep Personalization at Scale](https://docs.rox.com/development/product/product-overview/engage-deep-personalization-at-scale.md)
+- [Monitor: Stay Ahead with Intelligent Monitoring](https://docs.rox.com/development/product/product-overview/monitor-stay-ahead-with-intelligent-monitoring.md)
+- [Accessing Rox](https://docs.rox.com/development/product/accessing-rox.md)
+- [Login with Google](https://docs.rox.com/development/product/accessing-rox/login-with-google.md)
+- [Login with Email and Password](https://docs.rox.com/development/product/accessing-rox/login-with-email-and-password.md)
+- [Getting started](https://docs.rox.com/development/product/getting-started.md)
+- [Rox Academy](https://docs.rox.com/development/product/getting-started/rox-academy.md)
+- [Introduction to Agents](https://docs.rox.com/development/product/getting-started/introduction-to-agents.md)
+- [Add/Remove/Edit Columns](https://docs.rox.com/development/product/getting-started/add-remove-edit-columns.md)
+- [Add/Remove Filters](https://docs.rox.com/development/product/getting-started/add-remove-filters.md)
+- [Add/Remove Tags](https://docs.rox.com/development/product/getting-started/add-remove-tags.md)
+- [Add/Edit/Delete Views](https://docs.rox.com/development/product/getting-started/add-edit-delete-views.md)
+- [Add/Remove Artifacts](https://docs.rox.com/development/product/getting-started/add-remove-artifacts.md)
+- [Sequences](https://docs.rox.com/development/product/sequences.md)
+- [Custom Tracking Domains](https://docs.rox.com/development/product/sequences/custom-tracking-domains.md): Rox supports adding custom domains to your sequences to increase email message deliverability and maintain the reputation of your mailbox
+- [Multiple Mailboxes](https://docs.rox.com/development/product/sequences/multiple-mailboxes.md)
+- [People](https://docs.rox.com/development/product/people.md)
+- [Getting Started with People Lists](https://docs.rox.com/development/product/people/getting-started-with-people-lists.md)
+- [Inbound Prospecting](https://docs.rox.com/development/product/people/inbound-prospecting.md)
+- [Outbound Prospecting](https://docs.rox.com/development/product/people/outbound-prospecting.md)
+- [Enrich People](https://docs.rox.com/development/product/people/enrich-people.md)
+- [Enrich Company](https://docs.rox.com/development/product/people/enrich-company.md)
+- [Research People](https://docs.rox.com/development/product/people/research-people.md)
+- [Working with Your Lists](https://docs.rox.com/development/product/people/working-with-your-lists.md)
+- [Adding Provider Keys](https://docs.rox.com/development/product/people/adding-provider-keys.md)
+- [Plan](https://docs.rox.com/development/product/plan.md)
+- [Swarm Command (cmd+k)](https://docs.rox.com/development/product/plan/swarm-command-cmd+k.md)
+- [Research](https://docs.rox.com/development/product/research.md)
+- [Use Clever Columns to Research Accounts](https://docs.rox.com/development/product/research/use-clever-columns-to-research-accounts.md)
+- [Edit and Manage Clever Columns](https://docs.rox.com/development/product/research/edit-and-manage-clever-columns.md)
+- [Rox Account Page Overview](https://docs.rox.com/development/product/research/rox-account-page-overview.md)
+- [Engage](https://docs.rox.com/development/product/engage.md)
+- [Playbooks](https://docs.rox.com/development/product/engage/playbooks.md): How sales leaders can empower their teams with Rox Playbooks. Ensure that every seller kills their meetings, no matter what
+- [Next Steps](https://docs.rox.com/development/product/engage/next-steps.md)
+- [Plays](https://docs.rox.com/development/product/engage/plays.md)
+- [Outreach: Prospecting in Rox](https://docs.rox.com/development/product/engage/outreach-prospecting-in-rox.md)
+- [Outreach from Contact List](https://docs.rox.com/development/product/engage/outreach-prospecting-in-rox/outreach-from-contact-list.md)
+- [Monitoring](https://docs.rox.com/development/product/monitoring.md)
+- [Event Monitoring](https://docs.rox.com/development/product/monitoring/event-monitoring.md)
+- [Tuning](https://docs.rox.com/development/product/monitoring/event-monitoring/tuning.md)
+- [Agentic Monitoring](https://docs.rox.com/development/product/monitoring/agentic-monitoring.md)
+- [Agent Workflows](https://docs.rox.com/development/product/agent-workflows.md)
+- [What is a workflow?](https://docs.rox.com/development/product/agent-workflows/what-is-a-workflow.md)
+- [When should I use a workflow?](https://docs.rox.com/development/product/agent-workflows/when-should-i-use-a-workflow.md)
+- [Build your first workflow](https://docs.rox.com/development/product/agent-workflows/build-your-first-workflow.md)
+- [Workflow creation paths](https://docs.rox.com/development/product/agent-workflows/workflow-creation-paths.md)
+- [Workflow Triggers](https://docs.rox.com/development/product/agent-workflows/workflow-triggers.md)
+- [How to write a strong workflow prompt](https://docs.rox.com/development/product/agent-workflows/how-to-write-a-strong-workflow-prompt.md)
+- [What can workflows do?](https://docs.rox.com/development/product/agent-workflows/what-can-workflows-do.md)
+- [Example workflows](https://docs.rox.com/development/product/agent-workflows/example-workflows.md)
+- [Testing and debugging agent workflows](https://docs.rox.com/development/product/agent-workflows/testing-and-debugging-agent-workflows.md)
+- [Publish, monitor, and review outputs](https://docs.rox.com/development/product/agent-workflows/publish-monitor-and-review-outputs.md)
+- [Using webhooks](https://docs.rox.com/development/product/agent-workflows/using-webhooks.md)
+- [Best practices](https://docs.rox.com/development/product/agent-workflows/best-practices.md)
+- [Starter prompts to build an Agent Workflow](https://docs.rox.com/development/product/agent-workflows/starter-prompts-to-build-an-agent-workflow.md)
+- [Agent Workflows FAQ](https://docs.rox.com/development/product/agent-workflows/agent-workflows-faq.md)
+- [Chat](https://docs.rox.com/development/product/chat.md)
+- [Run with Rox: Checking your Inbox](https://docs.rox.com/development/product/chat/run-with-rox-checking-your-inbox.md)
+- [Run With Rox: Prepping for a Meeting](https://docs.rox.com/development/product/chat/run-with-rox-prepping-for-a-meeting.md)
+- [Run with Rox: Engage your Accounts](https://docs.rox.com/development/product/chat/run-with-rox-engage-your-accounts.md)
+- [Run with Rox: Generate Account Reports](https://docs.rox.com/development/product/chat/run-with-rox-generate-account-reports.md)
+- [Chat Skills](https://docs.rox.com/development/product/chat/chat-skills.md): Customize your chat experience
+- [Revenue](https://docs.rox.com/development/product/revenue.md): Stay on top of your opportunities and grow your team's revenue!
+- [Opportunity Management](https://docs.rox.com/development/product/revenue/opportunity-management.md)
+- [Opportunity Boards](https://docs.rox.com/development/product/revenue/opportunity-boards.md)
+- [Opportunity Stage Gating](https://docs.rox.com/development/product/revenue/opportunity-stage-gating.md): Admins can set up custom validation rules and approval flows to control opportunity stage progression and ensure sellers follow process
+- [Risk Generation](https://docs.rox.com/development/product/revenue/risk-generation.md)
+- [Products](https://docs.rox.com/development/product/revenue/products.md): Add information about your organisation's SKUs and pricebook details which your sellers can use to link to opportunities
+- [Syncing opportunities with CRM](https://docs.rox.com/development/product/revenue/syncing-opportunities-with-crm.md): Work on your opportunities in Rox and let us handle the load of keeping your CRM in sync
+- [Autofill](https://docs.rox.com/development/product/autofill.md)
+- [App Studio](https://docs.rox.com/development/product/app-studio.md)
+- [Organization-level Configurations](https://docs.rox.com/development/product/organization-level-configurations.md)
+- [Renaming company accounts](https://docs.rox.com/development/product/organization-level-configurations/renaming-company-accounts.md)
+- [User Management: Add, Remove, Update Users](https://docs.rox.com/development/product/organization-level-configurations/user-management-add-remove-update-users.md)
+- [Team Management: Add, Remove and Set Default Team](https://docs.rox.com/development/product/organization-level-configurations/team-management-add-remove-and-set-default-team.md)
+- [Data Retention Configurations](https://docs.rox.com/development/product/organization-level-configurations/data-retention-configurations.md)
+- [Propagating Views](https://docs.rox.com/development/product/organization-level-configurations/propagating-views.md): Create org-wide views and propagate them to new or existing users
+- [Propagating Configurations](https://docs.rox.com/development/product/organization-level-configurations/propagating-configurations.md)
+- [Managing Private Data Fields](https://docs.rox.com/development/product/organization-level-configurations/managing-private-data-fields.md)
+- [Configuring Salesforce Integration + Writeback](https://docs.rox.com/development/product/organization-level-configurations/configuring-salesforce-integration-+-writeback.md)
+- [CRM Assignment Rules Configuration](https://docs.rox.com/development/product/organization-level-configurations/crm-assignment-rules-configuration.md)
+- [User <> CRM Assignment Rules Configuration](https://docs.rox.com/development/product/organization-level-configurations/user-less-than-greater-than-crm-assignment-rules-configuration.md)
+- [User Impersonation for Troubleshooting](https://docs.rox.com/development/product/organization-level-configurations/user-impersonation-for-troubleshooting.md)
+- [Editing User Account Views](https://docs.rox.com/development/product/organization-level-configurations/editing-user-account-views.md)
+- [Opportunity Stage Validation and Gating](https://docs.rox.com/development/product/organization-level-configurations/opportunity-stage-validation-and-gating.md)
+- [Opportunity Stage Management](https://docs.rox.com/development/product/organization-level-configurations/opportunity-stage-management.md)
+- [Integrations](https://docs.rox.com/development/product/integrations.md)
+- [Slack](https://docs.rox.com/development/product/integrations/slack.md): By connecting your Slack workspace to Rox, you can receive personalized insights directly in your Slack DMs. Follow the steps below to complete the integration.
+- [Calendar](https://docs.rox.com/development/product/integrations/calendar.md)
+- [Email](https://docs.rox.com/development/product/integrations/email.md)
+- [Microsoft Teams App](https://docs.rox.com/development/product/integrations/microsoft-teams-app.md)
+- [Blogs](https://docs.rox.com/development/blogs.md)
+- [How Rox’s AI Agents collaborate with Devin](https://docs.rox.com/development/blogs/how-roxs-ai-agents-collaborate-with-devin.md)
+- [How We Built a Scalable, Intelligent Engine for Sales Insights](https://docs.rox.com/development/blogs/how-we-built-a-scalable-intelligent-engine-for-sales-insights.md)
+- [Cost Management with Insight Filtering](https://docs.rox.com/development/blogs/cost-management-with-insight-filtering.md)
+- [Query Optimization Practice at Rox: List Deal Query Example](https://docs.rox.com/development/blogs/query-optimization-practice-at-rox-list-deal-query-example.md)
+- [How Rox Handles Refresh Flow from CRM](https://docs.rox.com/development/blogs/how-rox-handles-refresh-flow-from-crm.md)
+- [RAG Pipeline for Insight Filtering](https://docs.rox.com/development/blogs/rag-pipeline-for-insight-filtering.md): How does Rox efficiently match incoming public data to a user?

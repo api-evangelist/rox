@@ -1,20 +1,57 @@
 aid: rox
 name: Rox
-description: Rox is a company surfaced as a portfolio company of general-catalyst, gv and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Rox is an AI-native revenue operating system for enterprise sales teams,
+  built around an Agent Swarm layer that turns unified revenue context into
+  autonomous go-to-market action. The platform automates pipeline generation,
+  account research, prospecting and outreach, meeting briefings, deal
+  management and forecasting, running these revenue workflows "on autopilot"
+  across a company's book of business. Rox unifies structured and unstructured
+  revenue data through a warehouse-native data fabric and connector hub,
+  integrating with Salesforce, HubSpot, Gmail, Microsoft Outlook and Graph,
+  Slack, Zoom, Snowflake, Databricks and BigQuery, then applies workflow-
+  specific agents (research, outreach, deal, meet, monitor) governed by a
+  unified permissions engine. Founded in San Francisco by Ishan Mukherjee and
+  backed by Sequoia, GV, General Catalyst and 40+ angels, Rox surfaced in the
+  API Evangelist network as a portfolio company and is profiled here as a
+  product/company profile — it publishes extensive product and engineering
+  documentation, a security trust center and a changelog, but no public REST
+  API or OpenAPI at the time of enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/rox/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: approval
+  trial: false
+  try_now: false
+  public: false
+  label: Requires approval
+  confidence: medium
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://framerusercontent.com/images/AYj16lWuLsXAaHXzCmZgJyUrIs.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - general-catalyst
 - gv
+- sequoia
 x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Artificial Intelligence
+- AI Agents
+- Sales
+- Revenue Operations
+- Go-to-Market
+- CRM
+- Sales Intelligence
+- Enterprise
+- Revenue Intelligence
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,3 +61,55 @@ maintainers:
 common:
 - type: Website
   url: https://www.rox.com
+- type: DeveloperPortal
+  url: https://docs.rox.com
+- type: Documentation
+  url: https://docs.rox.com/development/product/product-overview
+- type: Blog
+  url: https://docs.rox.com/development/blogs
+- type: Pricing
+  url: https://www.rox.com/pricing
+- type: SignUp
+  url: https://run.rox.com/api/auth/signup
+- type: Login
+  url: https://run.rox.com
+- type: TermsOfService
+  url: https://www.rox.com/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://www.rox.com/privacy-policy
+- type: Support
+  url: https://docs.rox.com
+- type: GitHubOrganization
+  url: https://github.com/rox-ai
+- type: StatusPage
+  url: https://status.rox.com/
+- type: ChangeLog
+  url: https://docs.rox.com/development/about-rox/release-notes
+- type: TrustCenter
+  url: https://trust.rox.com/
+- type: Compliance
+  url: https://trust.rox.com/
+- type: Security
+  url: https://www.rox.com/vulnerability-disclosure-policy
+- type: VulnerabilityDisclosure
+  url: https://www.rox.com/vulnerability-disclosure-policy
+- type: LLMsTxt
+  url: llms/rox-llms.txt
+- type: ChangeLog
+  name: Rox changelog artifact
+  url: changelog/rox-changelog.yml
+- type: Lifecycle
+  url: lifecycle/rox-lifecycle.yml
+- type: TrustCenter
+  name: Rox trust center artifact
+  url: security/rox-trust-center.yml
+- type: VulnerabilityDisclosure
+  name: Rox vulnerability disclosure artifact
+  url: security/rox-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/rox-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 7
+  pass: local-v1

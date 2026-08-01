@@ -1,0 +1,30 @@
+generated: '2026-07-21'
+method: probed
+source: live probes of Rox hosts
+note: >-
+  No .well-known discovery documents were served. docs.rox.com returns 307
+  redirects for .well-known paths (SPA), www.rox.com returns 404, and no
+  OpenID/OAuth authorization-server metadata is published (app auth is handled
+  via Auth0 on run.rox.com). Absence recorded for auditability; no WellKnown
+  scoring pointer emitted.
+hosts:
+- host: https://docs.rox.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 307
+  - path: /.well-known/api-catalog
+    status: 307
+- host: https://www.rox.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://run.rox.com
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
