@@ -15,8 +15,12 @@ description: >-
   backed by Sequoia, GV, General Catalyst and 40+ angels, Rox surfaced in the
   API Evangelist network as a portfolio company and is profiled here as a
   product/company profile — it publishes extensive product and engineering
-  documentation, a security trust center and a changelog, but no public REST
-  API or OpenAPI at the time of enrichment.
+  documentation, a security trust center and a weekly changelog, but no public
+  REST API, OpenAPI, GraphQL schema or MCP server at the time of enrichment.
+  The one externally callable HTTP surface Rox documents is an inbound Agent
+  Workflow webhook endpoint that an outside system POSTs JSON to in order to
+  trigger a workflow; its extensibility program, App Studio, is a sales-gated
+  private beta.
 url: https://raw.githubusercontent.com/api-evangelist/rox/refs/heads/main/apis.yml
 accessModel:
   pricing: unknown
@@ -40,7 +44,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-21'
+modified: '2026-08-13'
 tags:
 - Company
 - Artificial Intelligence
@@ -108,8 +112,30 @@ common:
   url: security/rox-vulnerability-disclosure.yml
 - type: DomainSecurity
   url: security/rox-domain-security.yml
+- type: GettingStarted
+  url: https://docs.rox.com/development/product/getting-started
+- type: Plans
+  name: Rox plans and pricing artifact
+  url: plans/rox-plans-pricing.yml
+- type: Webhooks
+  name: Rox inbound workflow webhook surface
+  url: asyncapi/rox-webhooks.yml
+- type: Conformance
+  url: conformance/rox-conformance.yml
+- type: Packages
+  url: packages/rox-packages.yml
+- type: Downloads
+  url: https://www.rox.com/downloads
+- type: Careers
+  url: https://jobs.ashbyhq.com/Rox-Data-Corp
+- type: Twitter
+  url: https://x.com/rox_ai
+- type: LinkedIn
+  url: https://www.linkedin.com/company/rox-ai/
+- type: YouTube
+  url: https://www.youtube.com/@rox-agent/videos
 x-enrichment:
-  date: '2026-07-21'
+  date: '2026-08-13'
   status: enriched
-  artifacts_added: 7
+  artifacts_added: 6
   pass: local-v1
