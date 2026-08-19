@@ -1,0 +1,82 @@
+generated: '2026-08-13'
+method: searched
+source: https://www.rox.com/pricing
+docs: https://www.rox.com/pricing
+model: outcome-and-usage-based
+unit:
+  name: Agent Action
+  definition: >-
+    Rox's fundamental unit of metering. Each task a Rox agent performs (account
+    research, people insights, pipeline generation, meeting brief) is counted as
+    a defined number of Agent Actions, sized by model complexity and data
+    processed. Rox states it charges for the outcome the agents deliver rather
+    than for underlying data processing.
+plan_count: 3
+plans:
+- name: Starter
+  price: 0
+  currency: USD
+  billing_period: month
+  audience: >-
+    Individuals doing light pipeline generation activities on a small number of
+    accounts.
+  included_quota:
+    agent_actions: 2000
+    period: month
+  overage: >-
+    None. On exhaustion the account keeps read access to existing information
+    but cannot perform tasks until the next monthly cycle or an upgrade.
+  self_serve: true
+  cta: Try now
+- name: Core
+  price: 50
+  price_qualifier: starts at
+  currency: USD
+  billing_period: month
+  audience: >-
+    Sales professionals running research, monitoring and contact discovery
+    across their accounts.
+  included_quota:
+    agent_actions: 5000
+    period: month
+  overage: >-
+    Early renewal — Core users may reset their Agent Action balance immediately
+    rather than waiting for the next cycle. Auto-reload (top up when the balance
+    falls below a threshold, with a monthly spend cap) was added 2026-07-22.
+  self_serve: true
+  cta: Try now
+- name: Enterprise
+  price: null
+  price_qualifier: contact sales
+  currency: USD
+  billing_period: null
+  audience: Enterprise companies operating sales teams at the highest level.
+  included_quota:
+    agent_actions: null
+    period: null
+  self_serve: false
+  cta: Contact sales
+  notes: >-
+    Enterprise-only capabilities documented elsewhere include customer-supplied
+    enrichment provider keys (bring-your-own API keys, all providers except HG
+    Insights), org-wide Microsoft Graph / Google Workspace / Zoom / Teams
+    integrations, and App Studio (private beta, sales-gated).
+billing_rules:
+- Agent Actions do not roll over; unused actions expire at the end of the cycle.
+- Allocation resets on the monthly renewal date for both Starter and Core.
+- Mid-cycle upgrade from Starter to Core is allowed; renewal date moves to one
+  month from the upgrade date.
+- Cancelling Core mid-cycle keeps remaining actions to the end of the period,
+  then reverts the account to Starter.
+- Always-on features (e.g. Insights) consume Agent Actions and can be tuned down
+  to control spend.
+api_pricing:
+  published: false
+  note: >-
+    Pricing is for the Rox application and its agents. Rox publishes no public
+    REST API and therefore no API-specific pricing, per-call rate card or
+    developer plan at the time of enrichment.
+evidence:
+- url: https://www.rox.com/pricing
+  status: 200
+  fetched: '2026-08-13'

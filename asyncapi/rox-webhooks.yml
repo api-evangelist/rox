@@ -1,0 +1,97 @@
+generated: '2026-08-13'
+method: searched
+source: https://docs.rox.com/development/product/agent-workflows/using-webhooks.md
+asyncapi_published: false
+asyncapi_note: >-
+  Rox publishes no AsyncAPI document, no event catalog and no outbound event
+  subscription surface. Nothing was generated in its place — this file records
+  only the webhook surface Rox actually documents.
+direction: inbound
+summary: >-
+  Rox exposes ONE public webhook surface, and it runs in the inbound direction:
+  an external system POSTs JSON to a per-workflow Rox endpoint to TRIGGER an
+  Agent Workflow. Rox does not document outbound webhooks (Rox calling a
+  customer endpoint on an event); the closest published capability is "HTTP
+  Enrichments" (2026-04-28 release notes), which pushes enriched list data to
+  external systems from inside a workflow.
+endpoint:
+  pattern: https://webhooks.backend.rox.com/webhooks/w/{webhook_slug}
+  host: webhooks.backend.rox.com
+  method: POST
+  content_type: application/json
+  path_parameters:
+  - name: webhook_slug
+    in: path
+    required: true
+    description: >-
+      Per-workflow slug generated in the Rox workflow UI. Rox states webhook
+      URLs are generated in the UI and most users do not hand-assemble the
+      endpoint. The slug is the only credential in the request — it functions as
+      a bearer secret in the URL.
+  request_body:
+    schema_published: false
+    description: >-
+      Any JSON object. Rox publishes no schema, no required fields and no
+      example payload beyond the docs' single illustrative body. The payload is
+      read inside the workflow and referenced by later steps.
+  authentication: none-documented
+  authentication_note: >-
+    The documented curl example sends no Authorization header, API key or
+    signature header. No request-signing scheme (HMAC, timestamp, replay
+    window), no IP allowlist and no verification handshake is published.
+  responses_published: false
+  retry_policy_published: false
+  rate_limit_published: false
+verbatim_example: |
+  curl -X POST https://webhooks.backend.rox.com/webhooks/w/{webhook_slug} \
+    -H "Content-Type: application/json" \
+    -d '{"feedback":"here'"'"'s some feedback"}'
+triggers:
+  note: >-
+    Webhook is one of five documented Agent Workflow trigger types. The other
+    four are internal to Rox and are not externally callable.
+  docs: https://docs.rox.com/development/product/agent-workflows/workflow-triggers.md
+  types:
+  - id: schedule
+    external: false
+    description: Recurring scheduled work (e.g. every weekday at 8 AM).
+  - id: before-after-meeting
+    external: false
+    description: Time-based automation around a meeting.
+  - id: transcript-completion
+    external: false
+    description: Fires as soon as a meeting transcript is processed.
+  - id: opportunity-activity
+    external: false
+    description: Fires on deal/opportunity changes.
+  - id: webhook
+    external: true
+    description: >-
+      Fires when an external system POSTs to the workflow's webhook URL. Rox
+      names form submissions, marketing signups, internal tool events and custom
+      automation from other platforms as the intended callers.
+probes:
+- url: https://webhooks.backend.rox.com/
+  status: 404
+  content_type: application/json
+  note: >-
+    Host is live and answers JSON ({"error":"Not found"}) behind an AWS API
+    Gateway (apigw-requestid header present), confirming a real service rather
+    than a marketing redirect.
+- url: https://webhooks.backend.rox.com/webhooks/w/<nonexistent-slug>
+  status: 404
+  content_type: application/json
+  method: POST
+  note: >-
+    An unknown slug returns 404 {"error":"Not found"} with no auth challenge,
+    confirming the slug is the only gate.
+- url: https://webhooks.backend.rox.com/openapi.json
+  status: 404
+  note: No machine-readable contract served at the webhook host.
+evidence:
+- url: https://docs.rox.com/development/product/agent-workflows/using-webhooks.md
+  status: 200
+  fetched: '2026-08-13'
+- url: https://docs.rox.com/development/product/agent-workflows/workflow-triggers.md
+  status: 200
+  fetched: '2026-08-13'

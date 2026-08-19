@@ -1,0 +1,52 @@
+generated: '2026-08-13'
+method: searched
+source: https://www.rox.com/pricing
+limit_count: 0
+note: >-
+  Rox publishes no HTTP API rate limits, no RateLimit-*/X-RateLimit-* response
+  header contract and no 429 behaviour, because it publishes no public REST API.
+  The only published, callable HTTP surface is the inbound workflow webhook
+  endpoint (see asyncapi/rox-webhooks.yml), and its documentation states no rate
+  limit, quota or throttling behaviour. Recorded as an honest zero; no
+  RateLimits pointer is emitted in apis.yml because there is no runtime
+  rate-limit signal for an agent to read.
+limits: []
+response_headers: []
+exhaustion_status: null
+product_quotas:
+  note: >-
+    Rox does meter the PRODUCT. These are plan-level monthly consumption quotas
+    on agent work, not HTTP request rate limits, and are captured here only so
+    the distinction is explicit. Full detail lives in
+    plans/rox-plans-pricing.yml.
+  quotas:
+  - scope: per-account
+    plan: Starter
+    window: month
+    limit: 2000
+    unit: Agent Actions
+    on_exhaustion: >-
+      Read access retained; no further agent tasks until the next cycle or an
+      upgrade.
+  - scope: per-account
+    plan: Core
+    window: month
+    limit: 5000
+    unit: Agent Actions
+    on_exhaustion: >-
+      Early renewal available to reset the balance immediately; auto-reload with
+      a monthly spend cap available since 2026-07-22.
+  - scope: per-account
+    plan: Enterprise
+    window: month
+    limit: null
+    unit: Agent Actions
+    on_exhaustion: null
+  rollover: false
+evidence:
+- url: https://www.rox.com/pricing
+  status: 200
+  fetched: '2026-08-13'
+- url: https://docs.rox.com/development/product/agent-workflows/using-webhooks.md
+  status: 200
+  fetched: '2026-08-13'

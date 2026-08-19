@@ -1,30 +1,118 @@
-generated: '2026-07-21'
+generated: '2026-08-13'
 method: probed
-source: live probes of Rox hosts
+source: live probes of every known Rox host, 2026-08-13
 note: >-
-  No .well-known discovery documents were served. docs.rox.com returns 307
-  redirects for .well-known paths (SPA), www.rox.com returns 404, and no
-  OpenID/OAuth authorization-server metadata is published (app auth is handled
-  via Auth0 on run.rox.com). Absence recorded for auditability; no WellKnown
-  scoring pointer emitted.
+  RECORDED ABSENCE. No Rox host serves a real .well-known discovery document.
+  No WellKnown, SecurityTxt or APICatalog pointer is emitted in apis.yml — this
+  file documents an absence, and a pointer would assert a surface the provider
+  does not serve. Two soft-200 traps are recorded explicitly so a later run does
+  not misread them: status.rox.com answers HTTP 200 with the SAME 2,871-byte
+  HTML shell for EVERY /.well-known/* path (SPA catch-all, not a document), and
+  https://www.rox.com/llms.txt is listed in the sitemap yet returns the Framer
+  single-page-app shell rather than an llms.txt. The real llms.txt is served by
+  the docs host at https://docs.rox.com/development/llms.txt.
 hosts:
-- host: https://docs.rox.com
-  documents:
-  - path: /.well-known/security.txt
-    status: 307
-  - path: /.well-known/api-catalog
-    status: 307
 - host: https://www.rox.com
   documents:
   - path: /.well-known/security.txt
     status: 404
   - path: /.well-known/openid-configuration
     status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
   - path: /.well-known/ai-plugin.json
     status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://rox.com
+  note: 308 permanent redirect to www.rox.com for all paths.
+  documents:
+  - path: /.well-known/security.txt
+    status: 308
+  - path: /.well-known/openid-configuration
+    status: 308
+  - path: /.well-known/api-catalog
+    status: 308
+- host: https://docs.rox.com
+  note: 307 redirect (docs SPA) for all .well-known paths.
+  documents:
+  - path: /.well-known/security.txt
+    status: 307
+  - path: /.well-known/openid-configuration
+    status: 307
+  - path: /.well-known/api-catalog
+    status: 307
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
 - host: https://run.rox.com
+  note: >-
+    Application host. Sign-in is brokered by Auth0 but no OIDC/OAuth discovery
+    metadata is published here.
   documents:
   - path: /.well-known/openid-configuration
     status: 404
   - path: /.well-known/oauth-authorization-server
     status: 404
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://trust.rox.com
+  note: 302 redirect for all .well-known paths (Secureframe-hosted portal).
+  documents:
+  - path: /.well-known/security.txt
+    status: 302
+  - path: /.well-known/openid-configuration
+    status: 302
+- host: https://status.rox.com
+  note: >-
+    SOFT-200 TRAP. Returns HTTP 200 text/html for every /.well-known/* path with
+    an identical 2,871-byte SPA shell body. Treated as a MISS on all paths. The
+    same shell answers /summary.json, /index.json and /history.rss, so the
+    status page also exposes no machine-readable status feed.
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    document: false
+    body: html-spa-shell
+  - path: /.well-known/openid-configuration
+    status: 200
+    document: false
+    body: html-spa-shell
+  - path: /.well-known/api-catalog
+    status: 200
+    document: false
+    body: html-spa-shell
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    document: false
+    body: html-spa-shell
+- host: https://webhooks.backend.rox.com
+  note: >-
+    Live AWS API Gateway service behind the inbound workflow webhook endpoint.
+    Answers application/json 404 for every discovery path.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+unresolved_hosts:
+- api.rox.com
+- app.rox.com
+- backend.rox.com
+- mcp.rox.com
+unresolved_note: >-
+  DNS does not resolve for these four names (curl exit before connect). Probed
+  on the chance an API or MCP host existed under a conventional name; none does.

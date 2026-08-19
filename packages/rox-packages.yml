@@ -1,0 +1,89 @@
+generated: '2026-08-13'
+method: searched
+source: >-
+  Registry searches across npm, PyPI, RubyGems, crates.io, NuGet, Maven Central
+  and pkg.go.dev, plus the github.com/Rox-AI organization and
+  https://www.rox.com/downloads
+sdk_count: 0
+sdk_note: >-
+  Rox ships NO first-party client library in any package registry. This is
+  consistent with the absence of a public API — there is nothing for an SDK to
+  wrap. No `SDKs` pointer is emitted in apis.yml, because emitting one would
+  credit Rox with client libraries it does not publish.
+packages:
+- language: n/a
+  kind: desktop-application
+  registry: github-releases
+  name: Rox-AI/rox-electron-updates
+  url: https://github.com/Rox-AI/rox-electron-updates
+  install: >-
+    Not installable as a library. Update feed for the Rox Electron desktop app;
+    the app itself is downloaded from https://www.rox.com/downloads.
+  official: true
+  version: v1.0.35
+  published: '2026-07-03'
+  note: >-
+    End-user desktop application update channel, NOT a developer package. Read
+    from the GitHub Releases API on 2026-08-13.
+- language: n/a
+  kind: desktop-application
+  registry: github-releases
+  name: Rox-AI/rox-mac-app-updates
+  url: https://github.com/Rox-AI/rox-mac-app-updates
+  install: >-
+    Not installable as a library. Update feed for the Rox Mac app; the app is
+    downloaded from https://www.rox.com/downloads as Rox.dmg.
+  official: true
+  version: mac-0.4.6
+  published: '2026-02-17'
+  note: >-
+    End-user desktop application update channel, NOT a developer package. Last
+    release predates the Electron feed by ~4.5 months, suggesting desktop
+    distribution moved to the Electron channel. Read from the GitHub Releases
+    API on 2026-08-13.
+github_organization:
+  url: https://github.com/Rox-AI
+  public_repos: 4
+  repos:
+  - Rox-AI/rox-electron-updates
+  - Rox-AI/rox-mac-app-updates
+  - Rox-AI/opensearch-py
+  - Rox-AI/dependabot
+  note: >-
+    The remaining two public repos are a fork of the OpenSearch Python client
+    and a Dependabot demo fork — neither is a Rox-authored library.
+rejected:
+- registry: pypi
+  name: rox
+  url: https://pypi.org/project/rox/
+  version: 6.0.1
+  reason: >-
+    OWNERSHIP CHECK FAILED — the PyPI package named `rox` is the "Rollout.io ROX
+    Python SDK" (author Rollout.io, homepage support.rollout.io). Same word,
+    different company. Not saved, not counted, nothing derived from it.
+searched_registries:
+- registry: npm
+  result: none
+  probed:
+  - '@rox/sdk'
+  - rox-sdk
+  - roxai
+  - '@rox-ai/sdk'
+  - rox-client
+  - 'keyword search: rox.com'
+- registry: pypi
+  result: none-owned
+  probed:
+  - rox
+  - rox-sdk
+  - roxai
+- registry: rubygems
+  result: none
+- registry: crates.io
+  result: none
+- registry: nuget
+  result: none
+- registry: maven-central
+  result: none
+- registry: pkg.go.dev
+  result: none

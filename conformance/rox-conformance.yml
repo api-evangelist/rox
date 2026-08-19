@@ -1,0 +1,118 @@
+generated: '2026-08-13'
+method: searched
+source: https://trust.rox.com/
+note: >-
+  Rox publishes no machine-readable API contract, so every API-shaped
+  cross-cutting standard below is recorded as not conformant on the honest
+  ground that there is no surface to assert it against — not as a failure of an
+  API Rox ships. The security/compliance program entries are real and evidenced
+  from the Secureframe-hosted trust center.
+conformance:
+- id: soc2-type-ii
+  name: SOC 2 Type II
+  conforms: true
+  evidence:
+    url: https://trust.rox.com/
+    detail: >-
+      Listed as an achieved certification with the report and a 2026 manager
+      assertion letter available on request behind a click-wrap NDA.
+- id: casa-tier-2
+  name: App Defense Alliance CASA Tier 2
+  conforms: true
+  evidence:
+    url: https://trust.rox.com/
+    detail: Listed as an achieved certification; report available on request.
+- id: iso-27001
+  name: ISO/IEC 27001
+  conforms: false
+  status: in-progress
+  evidence:
+    url: https://trust.rox.com/
+    detail: >-
+      Only an "ISO27001 Engagement Letter" is offered, i.e. an audit engagement
+      rather than a certificate.
+- id: gdpr
+  name: GDPR / data protection program
+  conforms: partial
+  evidence:
+    url: https://www.rox.com/privacy-policy
+    detail: >-
+      Rox publishes a privacy policy, a Data Management Policy referenced from
+      the subprocessor list, dated named subprocessors, a privacy contact
+      (privacy@rox.com) and configurable data-retention settings. No adequacy,
+      DPA text or SCC package is published anonymously, so this is recorded as
+      a program rather than a verified assertion.
+- id: saml2
+  name: SAML 2.0 SSO
+  conforms: true
+  evidence:
+    url: https://docs.rox.com/development/engineering/docs/rox-enterprise-integrations/enterprise-sso-via-auth0
+    detail: >-
+      Enterprise SSO via Auth0 supports SAML identity providers (Okta named);
+      self-serve configuration since 2026-07-01.
+- id: oidc
+  name: OpenID Connect
+  conforms: true
+  evidence:
+    url: https://docs.rox.com/development/engineering/docs/rox-enterprise-integrations/enterprise-sso-via-auth0
+    detail: >-
+      Enterprise SSO supports OpenID Connect connections (Okta, Microsoft Entra
+      ID). No OIDC discovery document is served on any rox.com host — the Auth0
+      tenant is not published.
+- id: oauth2
+  name: OAuth 2.0
+  conforms: partial
+  evidence:
+    url: https://docs.rox.com/development/engineering/docs/rox-enterprise-integrations
+    detail: >-
+      Rox CONSUMES OAuth-based org-wide authorization grants (Microsoft Graph,
+      Google Workspace, Zoom, Slack, Salesforce). Rox does not act as an OAuth
+      authorization server for third-party developers.
+- id: rfc9116
+  name: security.txt
+  conforms: false
+  evidence:
+    url: https://www.rox.com/.well-known/security.txt
+    detail: 404 on every rox.com host probed 2026-08-13.
+- id: rfc8594
+  name: Sunset / Deprecation headers
+  conforms: false
+  evidence:
+    detail: No deprecation policy or Sunset header contract published.
+- id: rfc9457
+  name: Problem Details for HTTP APIs
+  conforms: false
+  evidence:
+    detail: >-
+      No public API and no published error catalog. The one live public endpoint
+      (the workflow webhook) returns a bare {"error":"Not found"} envelope, not
+      application/problem+json.
+- id: openapi
+  name: OpenAPI
+  conforms: false
+  evidence:
+    detail: >-
+      No OpenAPI/Swagger document found on any Rox host after probing
+      /openapi.json, /openapi.yaml, /swagger.json, /v1/openapi.json and
+      /api-docs across www, docs, run, api, app, mcp and
+      webhooks.backend.rox.com.
+- id: asyncapi
+  name: AsyncAPI
+  conforms: false
+  evidence:
+    detail: >-
+      No AsyncAPI document and no event catalog; the only event-shaped surface
+      is an inbound webhook trigger (asyncapi/rox-webhooks.yml).
+- id: mcp
+  name: Model Context Protocol
+  conforms: false
+  evidence:
+    detail: >-
+      No hosted or stdio MCP server published. mcp.rox.com does not resolve.
+- id: a2a
+  name: A2A Agent Card
+  conforms: false
+  evidence:
+    detail: >-
+      /.well-known/agent-card.json and /.well-known/agent.json return 404 on
+      every Rox host probed.

@@ -1,6 +1,6 @@
-generated: '2026-07-21'
+generated: '2026-08-13'
 method: searched
-source: https://docs.rox.com/llms.txt
+source: https://docs.rox.com/development/llms.txt
 ---
 # ROX Docs
 
@@ -155,6 +155,7 @@ source: https://docs.rox.com/llms.txt
 - [Autofill](https://docs.rox.com/development/product/autofill.md)
 - [App Studio](https://docs.rox.com/development/product/app-studio.md)
 - [Organization-level Configurations](https://docs.rox.com/development/product/organization-level-configurations.md)
+- [Rename Your Workspace in Rox](https://docs.rox.com/development/product/organization-level-configurations/rename-your-workspace-in-rox.md)
 - [Renaming company accounts](https://docs.rox.com/development/product/organization-level-configurations/renaming-company-accounts.md)
 - [User Management: Add, Remove, Update Users](https://docs.rox.com/development/product/organization-level-configurations/user-management-add-remove-update-users.md)
 - [Team Management: Add, Remove and Set Default Team](https://docs.rox.com/development/product/organization-level-configurations/team-management-add-remove-and-set-default-team.md)

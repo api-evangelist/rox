@@ -1,0 +1,78 @@
+generated: '2026-08-13'
+method: searched
+source: https://docs.rox.com/development/engineering/docs/rox-enterprise-integrations/enterprise-sso-via-auth0.md
+api_authentication_published: false
+pointer_emitted: false
+pointer_note: >-
+  No `Authentication` pointer is wired in apis.yml. Rox publishes no public REST
+  API, so there is no API authentication scheme to document; what follows is the
+  END-USER and INTEGRATION authentication posture, recorded for completeness.
+  Emitting an Authentication pointer here would credit Rox with API auth
+  documentation it does not publish — the same false-credit failure mode as a
+  well-known pointer over a 404 probe.
+surfaces:
+- surface: application-signin
+  host: run.rox.com
+  broker: Auth0
+  broker_evidence: >-
+    Rox's published subprocessor list names "Auth0, Inc. — Authentication", and
+    the enterprise SSO documentation is titled "Enterprise SSO via Auth0".
+  methods:
+  - id: email-password
+    docs: https://docs.rox.com/development/product/accessing-rox/login-with-email-and-password
+  - id: google
+    docs: https://docs.rox.com/development/product/accessing-rox/login-with-google
+  - id: microsoft
+    description: '"Continue with Microsoft" via an Auth0 Enterprise connection to Microsoft Entra ID.'
+    docs: https://docs.rox.com/development/engineering/docs/rox-enterprise-integrations/outlook-sso-via-auth0
+  - id: enterprise-sso
+    protocols:
+    - SAML
+    - OpenID Connect
+    identity_providers_named:
+    - Okta
+    - Microsoft Entra ID
+    self_serve: true
+    self_serve_note: >-
+      "Enterprise SSO Self Serve" shipped 2026-07-01 — admins configure SSO from
+      Rox admin settings with no Rox intervention required.
+    docs: https://docs.rox.com/development/engineering/docs/rox-enterprise-integrations/enterprise-sso-via-auth0
+- surface: workflow-webhook
+  host: webhooks.backend.rox.com
+  scheme: none
+  description: >-
+    The inbound Agent Workflow webhook endpoint documents no authentication. The
+    per-workflow slug embedded in the URL is the only secret; no signature
+    header, timestamp or verification handshake is published.
+  reference: asyncapi/rox-webhooks.yml
+- surface: outbound-integrations
+  description: >-
+    Rox authenticates OUTWARD to third-party systems via OAuth-style org-wide
+    authorization grants an IT administrator approves — Microsoft Graph, Google
+    Workspace, Zoom Cloud, Microsoft Teams, Slack, Salesforce — plus warehouse
+    credentials for Snowflake, Databricks and BigQuery. These are Rox consuming
+    other providers' APIs, not Rox exposing one.
+  docs: https://docs.rox.com/development/engineering/docs/rox-enterprise-integrations
+- surface: customer-supplied-provider-keys
+  description: >-
+    Enterprise customers may store their own third-party enrichment API keys at
+    the organization level (all supported providers; self-serve accounts are
+    limited to HG Insights). Keys are held by Rox and used on the customer's
+    behalf — again inbound-to-Rox key custody, not a Rox API credential.
+  docs: https://docs.rox.com/development/product/people/adding-provider-keys
+well_known:
+  openid_configuration_served: false
+  oauth_authorization_server_served: false
+  note: >-
+    No OIDC/OAuth discovery metadata is served on any rox.com host; the Auth0
+    tenant is not published. See well-known/rox-well-known.yml for the probe.
+evidence:
+- url: https://docs.rox.com/development/engineering/docs/rox-enterprise-integrations/enterprise-sso-via-auth0.md
+  status: 200
+  fetched: '2026-08-13'
+- url: https://docs.rox.com/development/product/people/adding-provider-keys.md
+  status: 200
+  fetched: '2026-08-13'
+- url: https://run.rox.com/.well-known/openid-configuration
+  status: 404
+  fetched: '2026-08-13'

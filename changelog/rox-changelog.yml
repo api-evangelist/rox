@@ -1,40 +1,91 @@
-generated: '2026-07-21'
+generated: '2026-08-13'
 method: searched
 source: https://docs.rox.com/development/about-rox/release-notes
+markdown_source: https://docs.rox.com/development/about-rox/release-notes.md
 scheme: dated-weekly-release-train
 cadence: weekly
 current_version_note: >-
   Rox ships on a roughly weekly release cadence and publishes dated release
-  notes rather than semantic version numbers. Entries below are the recent
-  window captured at enrichment; the live release-notes page is the source of
-  truth.
+  notes rather than semantic version numbers. Notes describe product changes to
+  the Rox application; there is no API changelog because there is no public API.
+  Entries below are the recent window captured at enrichment; the live
+  release-notes page is the source of truth. Machine-readable markdown of the
+  page is served by appending .md to the URL.
+latest_entry: '2026-08-12'
 entries:
-- date: '2026-07-15'
-  highlights:
-  - '"Scheduled Sends" for sequences'
-  - '"Validate Insights" feature'
-  - Security Trust Portal launch
+- date: '2026-08-12'
   breaking: false
+  highlights:
+  - '"Voice Mode" — continuous spoken sessions on mobile and desktop, same tools
+    and permissions as chat, answers returned as sourced structured briefs'
+  - '"Contact Lists" — build and enrich contact lists in People, including
+    Salesforce search and Salesforce Create Contact enrichment'
+- date: '2026-08-05'
+  breaking: false
+  highlights:
+  - '"New Outbound Agent" — rebuilt around a Prospect / Configure / Execute /
+    Monitor four-stage flow with live per-stage counts'
+  - Sequence-level agent tuning briefs and step-level instructions with "Edit for
+    all"
+  - LinkedIn connection requests and messages as native tracked sequence steps
+- date: '2026-07-29'
+  breaking: false
+  highlights:
+  - '"Apps" — a new navigation area for purpose-built apps running on Rox data,
+    read-only (no CRM write-back), with Adoption Metrics for all customers'
+  - Configurable weekly-to-quarterly automatic refresh for research columns
+- date: '2026-07-22'
+  breaking: false
+  highlights:
+  - '"Dialer" — native call steps inside sequences with agent-prepped scripts and
+    logged call history'
+  - Chat-driven prospecting and outbound campaign editing
+  - Field-level permissions in Governance, with removal simulation
+  - Auto-reload for Agent Actions with a monthly spend cap
+- date: '2026-07-15'
+  breaking: false
+  highlights:
+  - '"Governance" — access rules applied at inquiry time to both users and agents'
+  - '"Scheduled Sends" for sequence tasks'
+  - '"Validate Insights" — on-demand re-check of an insight against its sources'
+  - '"Security Trust Portal" — SOC 2, CASA and policies self-serve at
+    trust.rox.com behind a click-wrap NDA'
 - date: '2026-07-08'
+  breaking: false
   highlights:
   - '"Rox Files" for managing agent-generated content'
-  - '"Propagation" for admin configuration rollouts'
-  breaking: false
+  - '"Propagation" for rolling out admin configuration to many users at once'
 - date: '2026-07-01'
-  highlights:
-  - '"Multiple Mailboxes" support'
-  - '"Enterprise SSO Self Serve" configuration'
   breaking: false
+  highlights:
+  - '"Multiple Mailboxes" support for sending sequences from more than one
+    mailbox'
+  - '"Enterprise SSO Self Serve" — admin-configured SAML/OIDC SSO (Okta named)
+    with no Rox intervention'
 - date: '2026-06-24'
-  highlights:
-  - '"CEO Mode" for viewing the entire book of business'
   breaking: false
+  highlights:
+  - '"CEO Mode" for viewing and querying the entire book of business'
 - date: '2026-06-17'
-  highlights:
-  - '"Skills" feature for customizing Chat behavior'
   breaking: false
+  highlights:
+  - '"Skills" for customizing Chat behavior'
+  - Account and contact list unification across entities
 - date: '2026-06-10'
-  highlights:
-  - '"Outbound Agent" for prospecting campaigns'
-  - Unlimited search results
   breaking: false
+  highlights:
+  - '"Outbound Agent" for prompt-launched prospecting campaigns'
+  - Unlimited search results (previously capped at 25) and CRM sync
+  - Search by account views, search in CRM, intelligent qualification
+- date: '2026-06-03'
+  breaking: false
+  highlights:
+  - '"Home" — daily real-time signals across the book of business'
+  - Chat across pipeline with ranked re-engagement triggers
+  - '"Live Coaching" grounded in the live call'
+- date: '2026-04-28'
+  breaking: false
+  highlights:
+  - '"HTTP Enrichments" — push enriched lead data from Lists to external systems
+    via HTTP calls (the only outbound HTTP capability Rox documents)'
+  - Multi-workspace Microsoft/Google integrations

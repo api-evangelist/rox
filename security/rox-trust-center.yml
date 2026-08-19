@@ -1,24 +1,87 @@
-generated: '2026-07-21'
+generated: '2026-08-13'
 method: searched
 probe: true
 source: https://trust.rox.com/
 url: https://trust.rox.com/
+legal_entity: Rox Data Corp
+platform: Secureframe
+platform_note: >-
+  The trust center is a Secureframe-hosted portal ("Continuously monitored by
+  Secureframe"). Documents are self-serve on REQUEST behind a click-wrap NDA and
+  approval, announced in the 2026-07-15 release notes as the "Security Trust
+  Portal" launch.
 certifications:
-- SOC 2 Type I
-- SOC 2 Type II
-- GDPR
+- name: SOC 2 Type II
+  status: achieved
+  artifact_available: on-request
+- name: CASA Tier 2
+  status: achieved
+  artifact_available: on-request
 certifications_in_progress:
-- ISO 27001
-notes: >-
-  Customer data is encrypted in transit and at rest using AES-256. Rox states
-  it undergoes independent third-party security audits on an annual basis. A
-  Security Trust Portal launch was announced in the 2026-07-15 release notes.
+- name: ISO 27001
+  status: in-progress
+  evidence: >-
+    The portal lists an "ISO27001 Engagement Letter" as a requestable document
+    rather than a certificate.
+documents_available_on_request:
+- SOC 2 Type II report
+- SOC 2 Type II Manager Assertion Letter (2026)
+- CASA Tier 2
+- Penetration Test — Executive Summary
+- ISO 27001 Engagement Letter
+- Policy — Physical Security
+- Policy — Internal Controls
+- Policy — Risk Assessment and Treatment
+- Policy — Acceptable Use
+- Policy — Data Classification
+control_domains:
+- Change Management
+- Availability
+- Organizational Management
+- Confidentiality
+- Vulnerability Management
+- Incident Response
+- Risk Assessment
+- Network Security
+- Access Security
+- Physical Security
+practices:
+- Development, staging and production environments are segregated.
+- Production data is not used in development or testing except for debugging
+  customer issues.
+- Third-party penetration testing; independent third-party security audits are
+  stated to run annually.
+- Customer data encrypted in transit and at rest using AES-256.
+subprocessors:
+  published: true
+  url: https://docs.google.com/document/d/e/2PACX-1vQl5mqWohdM-CHkz-86n3-C_VVAEonCsZH8B5yJVZoy9bQpwpCGA5SOlDvvmDD_1ZiOYXMZOELXbzeg/pub
+  last_updated: '2026-03-30'
+  count: 32
+  note: >-
+    Rox publishes a named, dated subprocessor list covering cloud/AI
+    infrastructure (AWS, GCP, OpenAI, Anthropic, Groq, Baseten, Together AI,
+    Cerebras, Modal, Vercel), data platforms (Snowflake, Databricks, MongoDB,
+    Turbopuffer, Fivetran), retrieval (Tavily, Firecrawl, SerpAPI, Bright Data,
+    Nimble), observability (Datadog, Sentry, LangChain, Braintrust) and Auth0.
+    OpenAI, Anthropic, Groq, Baseten, Together AI and Cerebras are each recorded
+    as operating under zero-data-retention policies. Customers may request
+    notification of new subprocessors via privacy@rox.com.
+security_page: https://www.rox.com/security
 security_contact: security@rox.com
+privacy_contact: privacy@rox.com
 evidence:
-- source: https://trust.rox.com/
+- url: https://trust.rox.com/
+  status: 200
+  fetched: '2026-08-13'
   keywords:
-  - soc 2 type i
-  - soc 2 type ii
-  - gdpr
-  - iso 27001 (coming soon)
+  - soc 2 type 2
+  - casa tier 2
+  - iso27001 engagement letter
+  - secureframe
   - trust center
+- url: https://docs.google.com/document/d/e/2PACX-1vQl5mqWohdM-CHkz-86n3-C_VVAEonCsZH8B5yJVZoy9bQpwpCGA5SOlDvvmDD_1ZiOYXMZOELXbzeg/pub
+  status: 200
+  fetched: '2026-08-13'
+- url: https://docs.rox.com/development/about-rox/release-notes.md
+  status: 200
+  fetched: '2026-08-13'

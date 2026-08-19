@@ -1,18 +1,46 @@
-generated: '2026-07-21'
+generated: '2026-08-13'
 method: searched
 source: https://docs.rox.com/development/about-rox/release-notes
 versioning:
   scheme: dated-weekly-release-train
   docs: https://docs.rox.com/development/about-rox/release-notes
+  latest_entry: '2026-08-12'
   note: >-
     Rox publishes dated weekly release notes rather than numbered API versions;
-    it does not expose a public versioned REST API at enrichment time.
+    it exposes no public versioned REST API at enrichment time. The desktop
+    application is versioned separately through its GitHub update feeds
+    (Electron v1.0.35, 2026-07-03) — see packages/rox-packages.yml.
 deprecation:
   policy_url: null
   sunset_header: null
-  note: No public deprecation policy or RFC 8594 Sunset/Deprecation header support found.
+  note: >-
+    No public deprecation policy and no RFC 8594 Sunset/Deprecation header
+    support found. No `Deprecation` pointer is emitted.
 sla:
   url: null
   uptime_target: null
+  note: >-
+    No public SLA or uptime target. The trust center lists an "Uptime and
+    Availability Monitoring" control and a Business Continuity and Disaster
+    Recovery Policy, both available only on request behind a click-wrap NDA.
 status_page: https://status.rox.com/
+status_page_probe:
+  url: https://status.rox.com/
+  status: 200
+  machine_readable_feed: false
+  note: >-
+    Custom single-page status site (title "Rox Status Page"). It exposes no
+    machine-readable feed — /summary.json, /index.json, /history.rss and
+    /feed.rss all return the same 2,871-byte HTML shell, and /api/v2/status.json
+    (the Atlassian Statuspage convention) 404s. Humans can read it; an agent
+    cannot subscribe to it.
+support_lifecycle:
+  private_beta:
+  - name: App Studio (Rox Apps)
+    docs: https://docs.rox.com/development/product/app-studio
+    access: sales-gated request form at run.rox.com/apps
+    note: >-
+      The closest thing Rox has to a developer/extensibility program. Custom
+      applications built on the Rox graph and agent orchestration, delivered
+      with a white-glove sales engagement — not a self-serve developer platform.
 deprecated_operations: []
