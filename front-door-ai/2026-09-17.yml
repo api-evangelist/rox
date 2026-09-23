@@ -1,0 +1,30 @@
+# Front Door AI Index — rox — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: rox
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: www.rox.com
+  final_host: www.rox.com
+  ownership: own
+  owner: rox
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 14
+  host_score: 14
+  density: 14.11
+  words: 992
+  tiers:
+    agentic: 3
+    core: 10
+    model: 1
+  ambiguous: 6
+  top_terms:
+    AI: 10
+    agent: 6
+    AI agent: 1
+    ChatGPT: 1
+    MCP: 1
+    agentic: 1
