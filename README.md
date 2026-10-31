@@ -64,6 +64,116 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Rox is a company surfaced as a portfolio company of general-catalyst, gv and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Rox is an AI-native revenue operating system for enterprise sales teams, built around an Agent Swarm layer that turns unified revenue context into autonomous go-to-market action. The platform automates pipeline generation, account research, prospecting and outreach, meeting briefings, deal management and forecasting, running these revenue workflows "on autopilot" across a company's book of business. Rox unifies structured and unstructured revenue data through a warehouse-native data fabric and connector hub, integrating with Salesforce, HubSpot, Gmail, Microsoft Outlook and Graph, Slack, Zoom, Snowflake, Databricks and BigQuery, then applies workflow- specific agents (research, outreach, deal, meet, monitor) governed by a unified permissions engine. Founded in San Francisco by Ishan Mukherjee and backed by Sequoia, GV, General Catalyst and 40+ angels, Rox surfaced in the API Evangelist network as a portfolio company and is profiled here as a product/company profile — it publishes extensive product and engineering documentation, a security trust center and a weekly changelog, but no public REST API, OpenAPI, GraphQL schema or MCP server at the time of enrichment. The one externally callable HTTP surface Rox documents is an inbound Agent Workflow webhook endpoint that an outside system POSTs JSON to in order to trigger a workflow; its extensibility program, App Studio, is a sales-gated private beta.
 
-Backed by: general-catalyst, gv — https://www.rox.com
+**Areas:** Company · Artificial Intelligence · AI Agents · Sales · Revenue Operations · Go-To-Market · CRM · Sales Intelligence · Enterprise · Revenue Intelligence
+
+## Rox on APIs.io
+
+Everything profiled for Rox is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/rox/](https://apis.io/providers/rox/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Rox Webhooks](https://apis.io/asyncapis/rox/rox-webhooks/)
+
+#### Security (4)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Rox Authentication](https://apis.io/security/rox/rox-authentication/)
+- [Rox Domain Security](https://apis.io/security/rox/rox-domain-security/)
+- [Rox Trust Center](https://apis.io/security/rox/rox-trust-center/)
+- [Rox Vulnerability Disclosure](https://apis.io/security/rox/rox-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Rox Plans Pricing](https://apis.io/plans/rox/rox-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Rox Rate Limits](https://apis.io/rate-limits/rox/rox-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.rox.com)
+- [Documentation](https://docs.rox.com/development/product/product-overview)
+- [Getting started](https://docs.rox.com/development/product/getting-started)
+- [Pricing](https://www.rox.com/pricing)
+- [Sign up](https://run.rox.com/api/auth/signup)
+- [Support](https://docs.rox.com)
+- [Changelog](https://docs.rox.com/development/about-rox/release-notes)
+- [Blog](https://docs.rox.com/development/blogs)
+- [Security](https://www.rox.com/vulnerability-disclosure-policy)
+- [Compliance](https://trust.rox.com/)
+- [Trust centre](https://trust.rox.com/)
+- [Terms of service](https://www.rox.com/terms-and-conditions)
+- [Privacy policy](https://www.rox.com/privacy-policy)
+- [GitHub](https://github.com/rox-ai)
+- [Status](https://status.rox.com/)
+
+## API Evangelist rating
+
+**Kin Score 45.3** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 39.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 44.7 |
+| Developer ergonomics | 38.1 |
+| Access clarity | 69.7 |
+
+**Agent readiness 19.8** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | yes |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 22.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/rox/](https://apis.io/providers/rox/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Rox: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/rox/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
